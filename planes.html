@@ -1,3 +1,4 @@
+HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -79,3 +80,86 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes - Aesthetic Training</title>
+
+  <!--  Enlace a Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!--  Enlace a CSS  -->
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--  Encabezado -->
+  <header class="container-fluid bg-dark py-3">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="text-white fs-2 fw-bold">Aesthetic Training</a>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="sobremi.html">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="planes.html">Planes</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--  Sección de Planes -->
+  <section id="planes" class="container py-5">
+    <h2 class="text-center text-white fw-bold">Nuestros Planes</h2>
+    <p class="text-center text-white">Elige el plan que mejor se adapte a tus necesidades y comienza tu transformación.</p>
+
+    <!--  Buscador y filtros -->
+    <div class="text-center mb-4">
+      <input type="text" class="form-control w-50 mx-auto" placeholder="Buscar planes...">
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- Plan 1 -->
+      <div class="col-md-4">
+        <div class="card plan-card text-center p-3">
+          <img src="assets/img/asesoria1a1.jpg.png" alt="Asesoría 1 a 1" class="img-fluid rounded">
+          <h2 class="fw-bold">ASESORAMIENTO 1 A 1</h2>
+          <p class="desc">ASESORAMIENTO PERSONALIZADO</p>
+          <p class="precio fw-bold text-warning">$98.000</p>
+          <p class="oferta text-success">20% de descuento en transferencia</p>
+        </div>
+      </div>
+
+      <!-- Plan 2 -->
+      <div class="col-md-4">
+        <div class="card plan-card text-center p-3">
+          <img src="assets/img/alimentacion.jpg.png" alt="Dieta personalizada" class="img-fluid rounded">
+          <h2 class="fw-bold">DIETA PERSONALIZADA</h2>
+          <p class="desc">PLAN DE ALIMENTACIÓN</p>
+          <p class="precio fw-bold text-warning">$24.000</p>
+          <p class="oferta text-success">20% de descuento en transferencia</p>
+        </div>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="col-md-4">
+        <div class="card plan-card text-center p-3">
+          <img src="assets/img/ganarmusculo.jpg.png" alt="Ganar Músculo" class="img-fluid rounded">
+          <h2 class="fw-bold">GANAR MASA MUSCULAR</h2>
+          <p class="desc">ENTRENAMIENTO PARA HIPERTROFIA</p>
+          <p class="precio fw-bold text-warning">$73.000</p>
+          <p class="oferta text-success">20% de descuento en transferencia</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--  Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
