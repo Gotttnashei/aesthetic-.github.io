@@ -1,0 +1,301 @@
+// VARIABLES
+$color-fondo: black;
+$color-texto: white;
+$color-acento: orange;
+$fuente-principal: 'Times New Roman', serif;
+$espaciado: 20px;
+
+// RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// ESTILOS GENERALES
+body {
+  font-family: $fuente-principal;
+  background-color: $color-fondo;
+  color: $color-texto;
+}
+
+// HEADER
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $espaciado;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+// HERO CON ANIMACIÓN
+.hero {
+  height: 100vh;
+  background-image: url('../img/fondoinicio.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-title {
+    font-size: 10rem;
+    letter-spacing: 1rem;
+    text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.7);
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+}
+
+// ANIMACIONES
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+// SECCIÓN DESTACADA CON ANIMACIÓN
+.destacada {
+  text-align: center;
+  padding: $espaciado;
+
+  h2 {
+    font-size: 2.5rem;
+    color: $color-acento;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+
+  button {
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: white;
+      color: $color-fondo;
+      transform: scale(1.1);
+    }
+  }
+}
+
+// EFECTO DE FLOTACIÓN EN IMÁGENES
+img {
+  transition: transform 0.4s ease-in-out;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// ANIMACIÓN DE APARICIÓN
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+// TARJETAS DE PLANES
+.card {
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// BOTONES
+button {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+  }
+}
+
+// CONTENEDOR DE PLANES
+.planes-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+// PLAN INDIVIDUAL
+.plan {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  h2 {
+    margin: 15px 0;
+    color: orange;
+  }
+
+  .precio {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: yellow;
+  }
+
+  .oferta {
+    font-size: 1rem;
+    color: green;
+  }
+
+  button {
+    padding: 10px 15px;
+    background: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: white;
+      color: black;
+      transform: scale(1.1);
+    }
+  }
+}
+
+// TARJETA DE CONTACTO MEJORADA
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.4);
+
+  h2 {
+    color: orange;
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// CONTENEDOR DE REDES SOCIALES MEJORADO
+.redes-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+// ESTILO DE CADA RED SOCIAL
+.redes-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 5px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:hover img {
+    transform: scale(1.2);
+  }
+}
+
+// SECCIÓN SOBRE MÍ
+.sobre-mi {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 60px 0;
+}
+
+// LISTA DE BENEFICIOS
+.lista-beneficios {
+  list-style: none;
+  padding: 0;
+
+  li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+}
+
+// TARJETA DE TESTIMONIOS
+.testimonio-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.4);
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  h3 {
+    margin-top: 10px;
+    color: orange;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// BOTÓN PERSONALIZADO
+.btn-custom {
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+  }
+}

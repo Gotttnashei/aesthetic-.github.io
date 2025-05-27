@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  background-color: black;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("../img/fondoinicio.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-title {
+  font-size: 10rem;
+  letter-spacing: 1rem;
+  text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.7);
+  color: white;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.destacada {
+  text-align: center;
+  padding: 20px;
+}
+.destacada h2 {
+  font-size: 2.5rem;
+  color: orange;
+  animation: fadeIn 1.2s ease-in-out;
+}
+.destacada button {
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.destacada button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+img {
+  transition: transform 0.4s ease-in-out;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.planes-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.plan h2 {
+  margin: 15px 0;
+  color: orange;
+}
+.plan .precio {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: yellow;
+}
+.plan .oferta {
+  font-size: 1rem;
+  color: green;
+}
+.plan button {
+  padding: 10px 15px;
+  background: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.plan button:hover {
+  background: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.4);
+}
+.contact-card h2 {
+  color: orange;
+  font-size: 1.8rem;
+}
+.contact-card p {
+  font-size: 1.2rem;
+}
+.contact-card:hover {
+  transform: scale(1.05);
+}
+
+.redes-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.redes-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+.redes-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+.redes-item p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 5px;
+}
+.redes-item:hover {
+  transform: scale(1.1);
+}
+.redes-item:hover img {
+  transform: scale(1.2);
+}
+
+.sobre-mi {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 60px 0;
+}
+
+.lista-beneficios {
+  list-style: none;
+  padding: 0;
+}
+.lista-beneficios li {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.testimonio-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.4);
+}
+.testimonio-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.testimonio-card h3 {
+  margin-top: 10px;
+  color: orange;
+}
+.testimonio-card:hover {
+  transform: scale(1.05);
+}
+
+.btn-custom {
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+.btn-custom:hover {
+  background: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */
