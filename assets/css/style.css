@@ -179,22 +179,55 @@ button:hover {
   transform: scale(1.05);
 }
 
+.plan {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.plan button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.plan button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
 .redes-container {
   display: flex;
-  justify-content: center;
-  gap: 15px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .redes-item {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 15px;
+  border-radius: 12px;
+  width: 120px;
+  height: 120px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 10px;
-  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+  text-align: center;
   transition: transform 0.3s ease-in-out;
 }
 .redes-item img {
@@ -202,15 +235,16 @@ button:hover {
   height: 40px;
   object-fit: contain;
   transition: transform 0.3s ease-in-out;
+  margin-bottom: 8px;
 }
 .redes-item p {
-  font-size: 1rem;
-  font-weight: bold;
   color: white;
-  margin-top: 5px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin: 0;
 }
 .redes-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .redes-item:hover img {
   transform: scale(1.2);
@@ -261,6 +295,56 @@ button:hover {
   background: white;
   color: black;
   transform: scale(1.1);
+}
+
+.row.equal-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.equal-height .col-md-6 {
+  display: flex;
+}
+.row.equal-height .contact-card {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.equal-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+.equal-height .col-md-6 {
+  display: flex;
+  flex-direction: column;
+}
+.equal-height .contact-card {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  min-height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.2);
+  padding: 25px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

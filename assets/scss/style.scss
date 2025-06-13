@@ -178,7 +178,7 @@ button {
   }
 }
 
-// TARJETA DE CONTACTO MEJORADA
+// TARJETA DE CONTACTO 
 .contact-card {
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
@@ -200,25 +200,62 @@ button {
     transform: scale(1.05);
   }
 }
+.plan {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255,165,0,0.2);
+  transition: transform 0.3s ease-in-out;
 
-// CONTENEDOR DE REDES SOCIALES MEJORADO
-.redes-container {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      transform: scale(1.05);
+    }
+  }
 }
 
-// ESTILO DE CADA RED SOCIAL
+
+// CONTENEDOR DE REDES SOCIALES 
+.redes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+// ESTILO UNIFORME DE CADA RED SOCIAL
 .redes-item {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 15px;
+  border-radius: 12px;
+  width: 120px;
+  height: 120px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 10px;
-  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+  text-align: center;
   transition: transform 0.3s ease-in-out;
 
   img {
@@ -226,17 +263,18 @@ button {
     height: 40px;
     object-fit: contain;
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 8px;
   }
 
   p {
-    font-size: 1rem;
-    font-weight: bold;
     color: white;
-    margin-top: 5px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin: 0;
   }
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
   }
 
   &:hover img {
@@ -299,3 +337,59 @@ button {
     transform: scale(1.1);
   }
 }
+
+// AJUSTE PARA IGUALAR LA ALTURA DE CONTACTO Y REDES
+.row.equal-height {
+  display: flex;
+  flex-wrap: wrap;
+
+  .col-md-6 {
+    display: flex;
+  }
+
+  .contact-card {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.equal-height {
+  display: flex;
+  flex-wrap: wrap;
+
+  .col-md-6 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-card {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+  }
+}
+
